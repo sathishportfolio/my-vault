@@ -1,0 +1,817 @@
+Tell me about yourself
+
+	I have completed my B.E / Computer Science & started my carrer in a startup company 
+	From the beginning of my carrer I had a chance to work on the project from scratch like Wireframe, Designing, Backend & Database 
+	Currently in my previous company i am completly into Java & Angular full stack development we used Azure Devops for build automation
+	And I have hands-on experience in ReactJs, Elasticsearch, RabbitMQ, Redis
+	Also, in my previous company I was in the Technical Lead role by leading a team of 10 out of which 3 of them were freshers 
+	So far I have worked on business domains like ERP, E-commerce, Manufacturing & Media
+	
+	---
+	communication with onsite co-ordinator would be like PI & Resource planning 
+	Appart from working experience i have learnt MEAN stack & DevOps using jenkins,sonar myself
+	I am always open to any technology stack 
+	
+	
+Explain your current project 
+
+	The project is a web portal for digital aircraft maintenance manual
+	Like we versioning different editions of books this web portal is used to customize manual to aircraft customer based on their flight configuration
+	It is a cloud based spring boot microservice application which also support offline mode for tab users
+	
+	We used 
+		Modularized Angular application as a frontend 
+		customized Authentication & Authorization service using authentication token
+		elasticsearch for index, search & filtering documents
+		RabbitMQ for event based communication
+		Camunda for Workflow based approval and publish of documents 
+		
+	I worked on customizing elastic search for offline application using angular & elasticsearch js plugin 
+	UI & Backend related tasks for filtering documents based on tags usings facets similar to ecommerce websites like Amazon 
+	Version controlling documents similar to Git branches using rabbitmq & camunda 
+	HOTFIX 
+	
+Agile process - how feature is travelled - PI -> 3 sprints 1 Innovation&Planning(IP) sprint-> feature -> user story -> task -> sub-task -> bug -> SR 
+Azure Devops flow 
+How will you secure your endpoint  - handle CSRF, middlewere, throttle (DDOS - Distribution of Deniel of service attack), authentication & auhtorization, oauth - clientId
+Log4J vulnerability - The Log4j vulnerability allows malicious attackers to execute code remotely on any targeted computer using RMI 
+OSI layers
+SOLID & GoF Design Patterns in Java
+How to implement singleton or prototype design pattern
+What is factory design pattern
+What is the use of cors & htaccess
+
+gzip
+---
+OOPS
+	- Inheritance ( IS-A )
+		Diamond problem - due to multiple inheritence when B,C extends A and again D extends B,C resolved with default interface method
+		default vs static method
+	- Polymorphism - Static/dynamic Binding or Static / Runtime Polymorphism also called Dynamic Method Dispatch  Example - Method overloading(static) / overriding(dynamic/runtime)
+	- Abstraction
+		- Abstract class, method (just declared, cant instanciate, sub class can define or override)
+		- Interface (just declared) With Default Methods 
+		- Purpose/Difference between abstract class and interface
+		interface types & example - Marker / Markable interface (Ex: Cloneable, Serializable) & Functional interface - (Ex: Runnable)
+		Can we declare a class as private - Cant declare top-level class only inner class can (cannot be accessed from an object outside the class)
+		Can we have constructor for abstract(yes, called with super() but no use in making it public as we cant instanciate abstract class) and interface (No, as we dont have a variable/method defined interface also no objects are created but default / static method allowed) ??
+	- Encapsulation - we cant access variable/method inside class directly. its possible only with object this is called encapsulation
+	- Coupling - dependencies btwn object - (interfaces) loosly / (access modifier) tightly coupled
+	- Cohesion - component which performs a single well-defined task - java.io vs java.util
+	- Association - relationship between the objects - 1-1, 1-M, M-M, M-1
+	- Aggregation ( HAS-A ) - object contains other objects as a part of its state - weak relationship between objects - inheritence (IS-A)
+	- Composition - strong relationship between the containing object - If you delete the parent object, all the child objects will be deleted automatically.
+	- Does java support multiple inheritence - No but possible with interface
+	- final, static - variable, method & class 
+	- Java Final vs Finally vs Finalize - How finalize work, when it will be called -> Garbage collector its called when object is destroyed for cleanup activity 
+	- this - reference variable to current object 
+	- Method Overloading vs Overridding
+	- Super Keyword - calling constructor of a abstract class 
+	- java instanceof operator
+	- Access Modifiers
+	- Call by Value and Call by Reference in Java
+		- There is only call by value in java, not call by reference.
+		- Why no pointers in java 
+	- Comparable vs Comparator - Comparable ( implements Comparable<T> & add compareTo() method Ex: Sort ) vs comparator ( implements Comparator<T> & compare() method, seperate file like name comparator, age comparator )
+	- Indexof vs contains Java
+	- implements Serializable and Transient variable ( would not be serialized ) - Classes implement it if they want their instances to be Serialized or Deserialized. Serialization is a mechanism of converting the state of an object into a byte stream
+	- Can we override static method - no
+Core Java / Architecture
+
+- super class of every class in Java - Class implicitly extends Object
+- Java Core Best Practices - https://www.codejava.net/coding/10-java-core-best-practices-every-java-programmer-should-know - https://xperti.io/blogs/java-coding-best-practices/
+- Describe list of Java Keywords & package lists
+x Socket
+x Data type conversion and fundamentals
+x XML Processing in Java - SAX parser, dom parser & jaxb
+
+	- how to create custom singleton class 
+	- constructor chaining -  within a class two args constructor calling single arg constructor & single arg constructor calling default constructor - throws chained exception
+	- Atomic Operations - to handle increment operator thread safe Ex: AtomicInteger
+	- serialization - object to bytestream on transfor or store as different format - implements Serializable- Different between serialisation and deserialisation
+	- How to not serialise only particular variable in entity class  - transient int value = 10 ( this will avoid variable when object is serialized )
+	- initialization blocks / static block - syntax: only static {} (once on class init, Static block is used to initialize the static data member. It is executed before the main method, at the time of classloading) / static initializer - syntax: only {} (each time on object creation)
+	- types of constructors default constructor, arg constructor, copy constructor, static const (not supported), private constructor (restricting object creation)
+	- Wrapper class - int Integer ( used to implement premitive datatypes in synchronization, multithreading )
+	- stack vs heap memory
+	- What is Shadowing - overriding outter scope variable value inside block scope 
+	- Static methods vs static block
+	- JDK - which has  JRE & tool to convert java into class , JVM - load, verify & execute class file , JRE - supporting libraries to run the code
+	- JVM internal working - https://medium.com/platform-engineer/understanding-jvm-architecture-22c0ddf09722
+	- Java memory management
+	- Why no JRE from Java 9 - due to modular development
+	- Is Java Paid after Java 11
+		Oracle provides two Java Development Kit releases, an OpenJDK build under the GPL open-source license and a commercial Oracle JDK build under a paid-for license.
+		Enterprise JavaBeans (EJB)?
+	- OpenJDK vs AdoptOpenJDK
+		https://stackoverflow.com/questions/52431764/difference-between-openjdk-and-adoptium-adoptopenjdk
+	- HotSpot vs OpenJ9 (famous due to cloud native movement - faster than HotSpot)
+	- Enumeration (hasmoreelements, nextElement) vs iterator(hasnext, remove) vs ListIterator(hasnext, remove, add, set) like pointing cursers for element access
+	- Copy of java object ( java8 has new feature? ) - shallow copying, Deep copying, copy constructor
+	- System in java - final class inside - java.lang.* mostly used for i/p , o/p
+	- What is reflexion api - getClassName(), forName(), .class() - cons - breaks encapsulation principle & possible to access privete methods/variables
+	- What is concurrent modification exception - occurs when an object is tried to be modified concurrently when it is not permissible
+	- Date, Time, and Calendar
+	Is Java "pass-by-reference" or "pass-by-value"?
+	Permgen (why depricated after Java7) - special heap space separated from the main memory heap for static & primitive variables vs Metaspace in Java
+	
+	public static void main(String args[]) - https://www.geeksforgeeks.org/understanding-public-static-void-mainstring-args-in-java/
+		Why main method in java is public static void
+		What is the use of String args[] in main method
+		Can we have multiple main method in java project - not allowed with class as main method is static but allowed in project level / What happens if we run project with 2class having main method - eclipse will pop which class to run 
+		Can we override / overload main method in java - can overload by args but cant override as its static method 
+		Is main method compulsory in Java? - main method not found in the class - https://www.geeksforgeeks.org/main-method-compulsory-java/	
+	Program argument vs VM argument differences
+Collections
+	- synchronized - synchronized keyword ensures that only one thread can enter the method at one time and concurrent collections
+	- static methods present in the collections class ( Example: Collections.sort() ) - List in link https://www.javatpoint.com/java-collections-class
+	- streams vs collections- data storage, modification, functional interface 
+	- Diagram
+	- Java collection - new <util> and Java Collections - .sort(), .addAll()
+	- difference between ArrayList and LinkedList classes 
+	- Difference between hash map and hash table with internal working 
+	- Difference between set and list
+	- Is hash map is thread safe - no
+	- hash map vs hash set 
+	- Concurrent hashMap
+	- hashcode() method vs equal
+	- How hashmap internally works - All DSA basic concepts 
+	- hash Map vs HashTable 
+Error vs Exception
+	- How do you handle multiple exception types with same exception
+	- What design pattern is used to implement exception handling - chain of responsibility 
+	- Diagram 
+	- Checked Exception
+	- Unchecked Exception
+	- Error
+	- throw vs throws
+	- try, catch, finally - catch Exception e first block &  Checked Exception in second block
+	- Java Custom Exception - how to handle Custom exception in spring boot
+	- exception-handling-with-method-overriding
+**** MultiThread & Deadlock - synchronization - thread safe  **** https://www.javatpoint.com/java-multithreading-interview-questions
+	- - volatile keyword
+	- processes and threads
+	- thread basics
+	different ways of threads usage - extends thread & implements Runnable
+	- Garbage collection
+	- what is multithreading & concurrency
+	- Deadlock explain
+	- life cycle  
+	- joing thread
+	- naming thread
+	- Daemon thread 
+	- thread pool
+	- Synchronized Block - used to lock common thread resources
+	- Process-based Multitasking (Multiprocessing)
+	- Thread-based Multitasking (Multithreading)
+	- What will happen when we call two times Start() in threads - IllegalThreadStateException 
+	- Thread safe Singleton & impl
+	- Callable in thread
+	-	What is the need for threads in Java?
+	-	How do you create a thread?
+	-	How do you create a thread by extending thread class?
+	-	How do you create a thread by implementing runnable interface?
+	-	How do you run a thread in Java?
+	-	What are the different states of a thread?
+	-	What is priority of a thread? How do you change the priority of a thread?
+	-	What is executorservice?
+	-	Can you give an example for executorservice?
+	-	Explain different ways of creating executor services .
+	-	How do you check whether an executionservice task executed successfully?
+	-	What is callable? How do you execute a callable from executionservice?
+	-	What is synchronization of threads?
+	-	Can you give an example of a synchronized block?
+	-	Can a static method be synchronized? - yes, locks for class level rather to object/instance level
+	-	What is the use of join method in threads?
+	-	Describe a few other important methods in threads?
+	-	What is a deadlock?
+	-	What are the important methods in Java for inter-thread communication?
+	-	What is the use of wait method?
+	-	What is the use of notify method?
+	-	What is the use of notifyall method?
+	-	Can you write a synchronized program with wait and notify methods?
+**** Input / Output streams ****
+	- Diagram 
+	- File input stream, output stream, reader, writer 
+	FileOutputStream
+	FileInputStream
+	BufferedOutputStream
+	BufferedInputStream
+	SequenceInputStream
+	ByteArrayOutputStream
+	ByteArrayInputStream
+	FileReader
+	FileWriter
+Java Strings
+	- utility methods in String class - .length(), isEmpty(), .equalsIgnoreCase(), startsWithIgnoreCase(), endsWithIgnoreCase(), trimWhitespaces(), containsWhitespace
+	- String (immutable) vs StringBuffer (syncronized & thread safe) vs StringBuilder (no syncronization & not thread safe)
+	- Immutability - String vs new String() - synchronization & thread safe  - Why string is immutable - thread safe & to avoid garbage collector to hold value in string pool for security reasons, synchronization and concurrency, caching, and class loading - https://youtu.be/to9DPVsdByE
+	- create your own immutable class 
+		how to declare or get variable from immutable class - final class, private final variable, parametrized constructor for deep copy 
+	- operations using String & StringBuilder 
+		- compare(), concat(), equals(), split(), length(), replace(), compareTo(), intern(), substring()
+		- charAt() ,compareTo() ,concat() ,contains() ,endsWith() ,equals()equalsIgnoreCase() ,format() ,getBytes() ,getChars() ,indexOf() ,intern() ,isEmpty() ,join() ,lastIndexOf() ,length() ,replace() ,replaceAll() ,split() ,startsWith() ,substring() ,toCharArray() ,toLowerCase() ,toUpperCase() ,trim()
+	- String Literal - "", new String(), 
+	- StringTokenizer
+	- equals() {things to consider when using} & == & compareTo() 
+	- split vs splice 
+Java features by version 7,8,9,11 - Changelogs in all java versions 
+	- Java 4/5
+		- Assertion 
+		- For-each Loop
+		- Varargs
+		- Static Import
+		- Autoboxing
+		- Enums
+		- Annotations & Custom Annotation - types / @interface - @Target & @Retention (meta annotation)
+		- Generics
+	- Java 7
+		- Binary Literals
+		- Switch with String
+		- Java 7 Multi Catch
+		- Try with Resources
+		- Type Inference
+		- Numeric Literals
+		- Java 7 JDBC
+	- Java 8 
+		- Lambda expressions,
+		- Default methods,
+		- Static methods in interface,
+		- ForEach() method,
+		- Method references (using class::method ),
+		- Functional interfaces Runnable, Comparator, Consumer, Supplier vs Predicate
+			- Functional Programming vs OOPS vs AOP
+			- interface method impl in class vers Functional interface method impl using lamda 
+			- interface that contains only one abstract method, Java 8 onwards, lambda expressions
+			- Vs @Annotation & Changes after java8 Lambda expression
+		- Stream API - No storage, functional programming, Possibly unbounded, Laziness-seeking. 
+			steam () from Collection interface, map {uses predicate functional interface} & filter {uses function functional interface} from Stream
+			map (), filter, toarray, collect, Collectors
+			Parallel vs Sequential Stream in Java
+			java 8 vs java 9 enhancement
+			Differentiate between map (single array) and flat map vs stream api (array inside another array to flat [[1,2,3],[4,5,6],[7]] -> [1,2,3,4,5,6,7])
+			Differentiate stream operations - stream().map/.filter - to iterate array of list with less memory/processing effort
+		- Stream builder		
+		- Base64 Encode Decode,
+		- Optional class,
+		- Collect vs Collectors class in stream api 
+		- Nashorn JavaScript Engine,
+		- Parallel Array Sorting,
+		- Type and Repating Annotations,
+		- IO Enhancements,
+		- Concurrency Enhancements,
+		- JDBC Enhancements etc.
+		What is the improvement in hashmap before and after java8 - on hashtable collition complexity increases from O(1) to O(n) so replaced balanced trees instead of linked lists
+		How to remove duplicate in list in java 8 - ARRAY.stream().distinct().collect(Collectors.toList());
+	- Java 9 
+		- Platform Module System (Project Jigsaw)
+		- Interface Private Methods
+		- Try-With Resources
+		- Anonymous Classes
+		- @SafeVarargs Annotation
+		- Collection Factory Methods
+		- Process API Improvement
+		- New Version-String Scheme
+		- JShell: The Java Shell (REPL)
+		- Process API Improvement
+		- Control Panel
+		- Stream API Improvement
+		- Installer Enhancement for Microsoft windows and many more
+Operators list in Java
+	- Unary Operator,
+	- Arithmetic Operator,
+	- Shift Operator,
+	- Relational Operator,
+	- Bitwise Operator,
+	- Logical Operator,
+	- Ternary Operator and
+	- Assignment Operator.
+Java Programs
+	- Java Basic Programs
+		- Fibonacci Series in Java
+		- Prime Number Program in Java & nth Prime Number Java
+		- Palindrome Program in Java
+		- Factorial Program in Java
+		- Armstrong Number in Java
+		- How to Generate Random Number in Java
+		- How to Print Pattern in Java
+		- How to Compare Two Objects in Java
+		- How to Create Object in Java
+		- How to Print ASCII Value in Java
+		- Reverse a String / Number 
+		- second / third largest from array using sort logic of temp variable 
+		- pattern
+		
+-->>
+
+------------------------------------------------------------------------------------------------------------------------
+Junit, PMD, Checkstyle, findbugs
+------------------------------------------------------------------------------------------------------------------------
+@mock ( dependent class ) vs @injectmock ( testing class instance created and we use mockito )
+how to config - coding standard
+------------------------------------------------------------------------------------------------------------------------
+SPRING 
+------------------------------------------------------------------------------------------------------------------------
+IOC container 
+DI - dependency injection / Ioc - inversion of control 
+Despatcher servlet 
+Bean
+Application context 
+How class not found exception is thrown
+Fail fast or fail safe
+Dependency management in pom
+Swagger - https://www.youtube.com/watch?v=IxKL0N7juMQ&list=PL6VhlFq6vOqpjIrQGTprBl7bwrpsvW1Oa&index=5&ab_channel=CoderUlagam
+What is the use of spring profile
+Scopes of a bean in spring application - singleton, prototype, request, session
+Why we are going for maven Than ant
+Gradle / Maven
+Java / Kotlin / Groovy
+SLF4j (abstract for all log frameworks) Vs Log4j vs logback 
+how to manage bean 
+bean life cycle 
+xml bean configuration 
+embedded tomcat vs tomcat as a standalone service?? 
+Explain the life cycle of maven
+pom.xml spring maven dependencies and those packages used for ?
+------------------------------------------------------------------------------------------------------------------------
+Hibernate
+------------------------------------------------------------------------------------------------------------------------
+using JPA to store Y/N for type Boolean instead of 0/1
+How to update two tables at a time  - commit & rollback - Database rollback vs java/jpa @Transactional annotation
+Hibernate vs JPA 
+Query catch in jpa
+Native query in jpa
+Caching in jpa
+Mapped by in jpa
+@Transient vs @Volatile
+@Ignore/@JsonIgnore
+@Auditable
+@Entity & related annotations
+@Table  & related annotations
+DTO / POJO  & related annotations
+@valid 
+@Data, @Getter, @Setter 
+Consumer, Supplier vs Predicate - https://medium.com/swlh/understanding-java-8s-consumer-supplier-predicate-and-function-c1889b9423d
+ORM - hibernate
+What is the difference between hibernate and jpa
+Why we are using sqlserver
+How to overcome when we are trying to fetch 1000 of records from single query
+How to fetch the second largest salary 
+*** Can we access multiple db/database in single microservics??
+	- CRUD 
+	- 1to1, 1toM, MtoM,...
+------------------------------------------------------------------------------------------------------------------------
+SPRING BOOT
+------------------------------------------------------------------------------------------------------------------------
+Jackson JSON
+Bean factory 
+Application context / Despatcher servlet
+XML vs Annotations based configuration
+Components-of-Spring-Boot
+Spring boot bootstrap process
+how will you Secure spring boot endpoints? ( different methods and its impl steps )
+how to create Custom annotation
+Explain process of creating a endpoint to fetch value from DB 
+How value is converted from UI to object in backend
+How do you communicate with ui from microservice
+Problems solved by spring framework & what is need for spring boot
+	- https://www.youtube.com/watch?v=bNFoN956P2A&ab_channel=in28minutesCloud%2CDevOpsandMicroservices
+	- https://www.springboottutorial.com/spring-boot-vs-spring-mvc-vs-spring
+Spring Boot - how to avoid concurrent access to controller
+How to implement exception handling in spring boot
+@RepositoryRestResource without using controller class
+Hytrix
+Eureka
+Loadbalaner
+Code quality tool - Sonarq
+Rest template
+Https methods
+Https type
+Get,post, delete,put etc
+What is the difference between soap and rest
+How caching is handled in repository level
+Difference between .yml and properties file
+@component vs @service vs @controller 
+@lazyload - service autowire 
+componant scan & dispatcher servlet , view resolver 
+mandatory @annotations for starting a spring / spring boot application 
+what is the use of @Autoconfiguration ??
+@required
+What is autoconfiguration
+Without @id annotations it act an entity class or not???
+Why we are using @autowiring
+How to read value from .yml file
+Difference between @qualifier and @primary
+Different between spring and spring boot
+how the spring boot internally work
+what is @componentscan
+Difference between @restcontroller and @controller
+Java Singleton (JVM level) vs spring Singleton (Application level)
+Connecting to H2/SQl database configuration 
+How will you get data from database - Controller endpoint -> Repository -> DB flow
+spring boot setup types - eclipse started , spring.io & cmd cli
+Spring JPA vs Data JPA
+CRUD vs JPA Repository & method lists
+Pessimistic / Optimistic lock
+Lock - Pessimistic Locking, Optimistic Locking, jpa transaction locks, distributed lock, SchedulerLock, Hibernate lock
+@RequestMapping
+@Get/Post/Put/PatchDelete Mapping
+@Required
+@PathVariable vs @RequestParam
+@RestController
+@Repository
+@Bean
+@Autowired
+@Componenet vs @Service 
+@Transactional 
+@Configuration & @ConfigurationProperties
+@Import
+@component vs @service
+@ComponentScan
+@RequestAttribute, @RequestHeader, @RequestBody
+@SpringBootApplication == @EnableAutoConfiguration, @ComponentScan, and @SpringBootConfiguration
+spring integration vs spring listener vs restcontroller endpoint 
+Put vs Patch
+return ResponseEntity vs DTO as json
+Why ZUUL & Hystrix in maintenence 
+ZUUL vs cloud-gateway
+hystrix vs resilent4j
+What is actuator - health check of the application 
+	https://www.youtube.com/watch?v=KQv2gpF2Guo&list=PL6VhlFq6vOqpjIrQGTprBl7bwrpsvW1Oa&index=12&ab_channel=CoderUlagam
+Spring boot admin - impl 
+How microservice communicate & how security is enabled
+How do you scale up ur project - using spring cloud with service discovery, fault tolurence & load balancing with multiple instance of core services
+**** Actuator & explain few of its endpoint 
+AOP ? 
+spring aop vs interceptor
+Config Server 
+	- spring-cloud-config-server & spring-cloud-starter-netflix-eureka-client
+	- @EnableConfigServer, @EnableEurekaClient
+	- spring.cloud.config.server.git.uri=file:///D:/java/blog/blog-config
+Eureka Server 
+	- spring-cloud-starter-netflix-eureka-server
+	- @EnableEurekaServer
+	- management.endpoints.web.exposure.include=*
+Gateway 
+	- spring-cloud-starter-gateway & spring-cloud-starter-netflix-eureka-client
+	- @EnableEurekaClient
+	- spring:
+		  cloud:
+			gateway.discovery.locator:
+			  enabled: true
+			  lower-case-service-id: true
+Other services 
+	- spring-boot-starter-web & spring-cloud-starter-config & spring-cloud-starter-netflix-eureka-client
+	- @EnableEurekaClient
+	- spring.config.import=optional:configserver:http://localhost:8888
+pom
+	- spring-boot-starter-parent - default configuration & dependency management, default java version
+	- spring-boot-starter (including auto-configuration support, logging, and YAML) vs  spring-starter-web
+	- spring-starter-web vs spring-cloud
+
+Mail 
+Spring reactive
+JAR/WAR differece
+change default tomcat for spring boot application
+Security & basic config 
+Types of security - Spring default, SAML, Kerberos / LDAP, OAUTH, JWT, OKTA / Open ID Connect (OIDC) / Single sign-on
+------------------------------------------------------------------------------------------------------------------------
+SQL 
+------------------------------------------------------------------------------------------------------------------------
+Stored procedure
+select, update, delete
+truncate vs delete 
+JOIN - inner, outter
+system tables - get list of table with column name 
+------------------------------------------------------------------------------------------------------------------------
+Elasticsearch
+------------------------------------------------------------------------------------------------------------------------
+document, index 
+aggragation
+count 
+match vs filter 
+must vs should 
+term vs terms
+nested query ?
+------------------------------------------------------------------------------------------------------------------------
+RabbitMQ
+------------------------------------------------------------------------------------------------------------------------
+JMS - Rabbit
+Advanced Message Queuing Protocol
+Exchange
+	- Default/Direct - exact match with routing key , Fanout - to all , Topic - pattern match 
+Exchange vs Channel vs Queue
+Producer vs consumer 
+Route, Routing key 
+Binding, subscribe 
+dlq 
+------------------------------------------------------------------------------------------------------------------------
+Camunda 
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
+Redis 
+------------------------------------------------------------------------------------------------------------------------
+
+lock
+
+------------------------------------------------------------------------------------------------------------------------
+HTML, CSS
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
+JS, TS 
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
+Angular
+------------------------------------------------------------------------------------------------------------------------
+AngularJS vs Angular
+AOT vs JIT
+interpolation
+Angular Bootstrap 
+one way vs two way 
+Angular Third-Party integration
+Componenet lifecycle 
+Componenet vs Service 
+templateUrl, template:``, ng-template vs ng-container vs ngtemplateoutlet
+Subject vs BehaviouralSubject vs observable
+Promise vs observable
+Router logic 
+Lazy loading
+Pipes
+Directives & Types - predefined examples 
+PWA 
+Service worker 
+SSR / Universal Application
+Input / Output 
+ViewChild, ViewChildren & Querylist in Angular
+Reactive Forms vs. Template-driven Forms
+------------------------------------------------------------------------------------------------------------------------
+Jasmine test 
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+Important links / Ref
+------------------------------------------------------------------------------------------------------------------------
+www.onlinetutorialspoint.com
+https://howtodoinjava.com/
+https://howtodoinjava.com/java8/java-stream-distinct-examples/
+https://www.onlinetutorialspoint.com/spring-boot/spring-boot-datarest-example-repositoryrestresource.html
+https://www.geeksforgeeks.org/java-program-find-ip-address-computer/?ref=lbp
+https://www.geeksforgeeks.org/java/?ref=shm
+https://www.javatpoint.com/java-tutorial
+https://spring.io/guides
+https://www.javatpoint.com/java-tutorial
+https://www.tutorialspoint.com/java/java_overview.htm
+https://www.programiz.com/java-programming
+https://www.learnjavaonline.org/
+https://www.scientecheasy.com/2018/07/core-java-tutorial.html/
+https://javatechonline.com/
+https://javatechonline.com/java-interview-questions/
+https://javatechonline.com/java-coding-interview-questions/
+
+Points to Remember
+------------------------------------------------------------------------------------------------------------------------
+Know packages & parent class/interface for any utility, service & libraries impl - Explain with package name ( Example: Config service is cloud, Detail about Spring boot default/most used @Annotations - Child Annotations )
+Spring realted interview questions in interviewbit, javatpoint, github available for Spring, SpringBoot, Hibernate, Microservices, MVC, JPA, JUNIT, Maven, 
+
+spring dispatcher servlet video playlist
+
+Explain your carrer graph so far	
+What are the challeges you have faced in current project ? 
+- What are the technologies that you have worked on so far? - For me as I learnt softwere basics nuances It is always okay to work in any technical stack
+- What are the domains that you have worked so far? 
+- Can you explain architecture of previous project?
+- What do you know about <Interview Technology>
+- Why do we prefer <Interview Technology> over other
+TDD, BDD, Pair Programming
+
+------------
+
+1. self-Intro
+2.what is ur Core competrncy
+3. Explain Deployment process
+4. which commit tool is used? 
+5. How to connect application to Data base?
+6. How username and password are protected while connecting to DB?(Ans: using microsoft azure)
+7.Where the environment variables are stored in azure?
+8. Spring security(how do you secure ur application? and which library is used?)
+9. what is the use of spring-data-jpa depenedency?
+10. What is JPA?
+11. What is eager and lazy loading in pagination and sorting?
+12.How to get records from DB using pagination?
+13. What is primary and secondary indexing?
+14. Which DB is used in our application?
+15. Implementation of hashmap ? (asked in all interviews)
+16. hashmap can have null keys ?
+17. hashmap can have multiple null keys?
+18. hashmap can have multiple null values?
+19. Write java code to find missing values from an array?
+20. Why String is immutable?
+21. What is collections?
+22.Difference between collections and streams?
+23. Which one is faster (set or hashmap)?
+24. What is checked and unchecked exceptions?
+25. Is "FileNotFound" run time exception?
+26. How to check if a hashmap has this(any value) value?
+27. What is thread safe in hashmap?
+28. Difference between hashmap and set?
+29.What are all the methods in hashmap?
+30.What is synchronization in java?
+31. What is stream api?
+32.What are all the methods of stream api?
+33.what is Reduce method in stream?
+34. Difference between stream and parallel stream?
+35.What is optional api?
+36. Methods of optional?
+37. Diff between Optional.Of(object) and Optional.NullableOf(Object)
+38.What is interceptors?
+39. How to create customized exception?
+40.What is dependency injection?
+41.Diff between controllers and rest cotrollers?
+42.what is ACID properties?
+43.what is the use of @bean?
+44.Different types of dependency injection?
+45.How to find the delay of response from spring boot?
+46.Different methods of request mapping?
+47.Commands of git?
+48. Diff between authentication and authorization?
+49. How to find duplicate api calls in ui?
+50. What is the use of spring data jpa?
+51. What are all the default methods of jpa?
+52. What is right join and left join?
+53. Does left join allows null value from right table
+54.How to find the sum of the ages of an emplyees for age >35 using stream api?
+55.What is the use of elasticsearch and rabbitmq?
+56.How to encrypt the confidential data entered by user while storing to repository?
+57.How to convert a JAR applicatio to a WAR?
+58.Why version is not mentioned for dependencies in pom.xml and from where it is taken?
+59.which version of spring boot is used in the project?
+60. Can we have more than one property file and how to use that?
+61.Which library is used for logging?
+62.Where the log file would be generated for a project?
+63. what are all bean scopes available?
+64.What is serialization and deserialization?
+65.How to pass multiple ids to "GET" api using path variable?
+66.Tpes of Produces in api?
+67. What is the library used for responsebody? Ans: Jackson
+68.What is other way of getting data from an application A to application B without using rest template?
+69.What is immutable class?
+70.Diff between abstract class and interface?
+71.Can we define a methos inside interface?
+72.What is the use of "protected" access modifier?
+73.Can we override static methods and private methods?
+74.Can we overload man method in java?
+75.What are all the features of java11?
+76.Which is the latest version of java?
+77.Can we have immutable constructor?
+78.What is the use of "Default" modifier?
+79.What is spring mvc?
+80.String s1=abc
+   String s2=new String("abc")
+   Will it create two different objects? If yes where?
+81. Difference between threads and process?
+82.How to remove duplicates from list without using set?
+83.What is @Qualifier?
+84.What are all the design patterns used in the project?
+
+spring boot
+- how to create singleton class
+- Difference between @Qualifier, @Autowired, @Bean
+- what is synchronized methods
+- what is the difference between hibernate and jpa
+- (one to one, many to one mapping)
+- what is actuator
+- Difference between @Restcontroller and @controller
+- diff btw pathvariable and request param
+- how to connect to db
+- end to end deployment process
+- can a single springboot project have multiple db
+- what security is used in the project
+- what is dispatcher servlet
+- diff btw spring and spring boot
+- what is the use of response entity
+-springboot flow
+-diff btw native query and normal query
+
+
+java
+- what is jvm, jit, jre and their heap memory size
+- default capacity of list, map, set
+- can we have static constructor
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+JACATECHIE
+---------------------------------------------------------------------------------------------------------------------------------
+
+The pillar of OOPs concept includes encapsulation, inheritance, polymorphism, and abstraction.
+This subpart explains encapsulation, inheritance, and polymorphism in Java.
+Dynamic polymorphism allows multiple implementations of the inventory service
+Overriding static and private methods is not allowed
+Using default methods in Java interfaces for flexible implementation
+Accessing parent property and overriding default methods
+The finalize method is not called if the system GC is done.
+Proper implementation of equals and hashCode methods is necessary to avoid duplicates in collections.
+Compile time exceptions can be handled at compile time
+FileNotFound exception is a checked exception and not a compile time exception.
+Delegating exception handling to next method caller
+Understanding the order of exception hierarchy is important while handling exceptions in Java.
+finally block can be stopped from executing
+String objects can be created using the new keyword or string literal
+String is immutable
+String class is immutable in Java
+String buffer and StringBuilder are mutable, while String is immutable.
+Creating an immutable class: Setter method write only getter method
+Demonstrating how to avoid modifying a Date object in Java
+Handling mutability in Java objects
+Using the clone method to create a separate copy of an object.
+It is recommended to use char array instead of String for storing passwords.
+Writing custom marker interfaces in Java
+The difference between AR list and linked list
+Using generics with lists helps in avoiding type cast issues.
+Creating a custom AR list to disallow duplicates
+Set implementation allows duplicate objects if equals and hashCode methods are not overridden for custom objects.
+The contract between equals and hashCode methods determines if duplicate objects are allowed
+Sorting objects based on ID and name using Comparable and Comparator
+Creating Comparators in Java for sorting objects based on different attributes.
+Explanation of custom sorting using comparator
+Fail-fast and fail-safe iterators in Java
+ConcurrentHashMap is used when parallel thread access and modification is required.
+ConcurrentHashMap does not allow adding null keys or values and throws a null pointer exception immediately.
+ConcurrentHashMap uses segment locking or bucket locking
+ConcurrentHashMap is preferred over Hashtable due to its locking mechanism.
+Hing Collision
+Hash map internally uses linked list nodes.
+Understanding TreeMap in Java
+The compareTo() method compares two objects and returns -1, 0, or 1 based on the comparison result.
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+Surf about
+-----------
+
+Spring flux / redux way of application development 
+
+spring.config.import=optional:configserver:http://localhost:8888/ - Check using service id instead IP here 
+
+{ciper<text>} in yml / how to encrypt & decrypt config files 
+
+https://www.youtube.com/playlist?list=PLqq-6Pq4lTTZRvrqmB_hq4XfkVyOX-39T
+
+prometheus.io
+
+maven-update-dependencies-automatically or sequential service maven update 
+
+
+Interview
+-----------
+
+
+https:// for localhost 
+
+SLF4J: Class path contains multiple SLF4J bindings
+
+npx vs npm
+
+frequently used yml properties
+
+management.endpoints.web.exposure.include=* why ?? can we use in PROD
+
+why zuul in maintenance 
+
+zuul replacement - spring cloud gateway & its impl - https://youtu.be/puIJ1Mn9_LE
+
+Annotations by spring microservice project - standard/default, web, config, eureka, zuul, jpa
+
+bean
+
+Autowire 
+
+restTemplate.getForObject
+
+@Configuration & @PropertySource
+
+add dependencies using GUI after project creation
+
+Config server yml & other source options 
+
+spring.cloud.config.server.git.uri without file:/// issue - always loads from temp folder & wont refresh
+
+types of reading config server yml from client
+
+https://12factor.net
+
+@LoadBalanced - why for restTemplate
+
+Hystrix vs Resillence4j
+
+Optimistic vs. Pessimistic locking
+
+how-to-load-configuration-classes-from-separate-jars - @Import(NameOfTheConfigurationYouWantToImport.class)
+
+@ComponentScan tells Spring in which packages you have annotated classes which should be managed by Spring
+
+how to know bean class in project - using actuator 

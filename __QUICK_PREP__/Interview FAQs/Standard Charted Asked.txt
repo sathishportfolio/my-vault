@@ -1,0 +1,49 @@
+## Java Fundamentals
+1. What is autoboxing in Java?
+2. What should we remember when overriding equals() in Java?
+3. What is a Record in Java and in which scenario would you use it?
+4. What is JIT (Just-In-Time Compiler) in Java?
+
+## Concurrency & Collections
+5. What is a BlockingQueue and how does it work?
+6. What is the difference between HashSet and TreeSet?
+7. How does ConcurrentHashMap store data internally and ensure thread safety?
+8. What are Future and CompletableFuture?
+9. When should we use each (Future vs CompletableFuture)?
+10. How do you create an ExecutorService object with a fixed thread pool size?
+11. What is the difference between Runnable and Callable beyond return type?
+
+## Memory Management & JVM
+12. How does Garbage Collection (GC) work in Java?
+13. Are there any techniques for Garbage Collection?
+14. What is heap memory?
+15. Does GC operate on heap or non-heap memory?
+16. How can we get a heap dump in Java?
+17. What is the difference between java.io and java.nio?
+
+## JPA & Databases
+18. In JPA, if a table has hundreds of columns and we don’t know which ones were updated, how can we detect the changes?
+19. How do we write custom queries in JPA?
+20. How do we make an entry in an audit table using a stored procedure?
+21. Which SQL command is used to make an entry in an audit table using a stored procedure?
+22. What is the difference between UNION and UNION ALL?
+23. What are CLOB and BLOB in databases?
+
+## Spring Boot & Microservices
+24. What is the difference between @PathVariable and @RequestParam?
+25. If there are two beans of the same type in Spring Boot, how do we differentiate them?
+26. How do we prevent fallback in Spring Boot?
+27. What is the name of the design pattern used for fallback?
+28. How do we maintain REST API versioning?
+29. Which tool is used in an environment with hundreds of microservices to collect logs?
+30. Which tool is used to monitor memory and collect memory dumps?
+
+## DevOps & Tools
+31. What is the difference between containerized and VM-based environments?
+32. What is the custom extension for a Dockerfile?
+33. How do we squash multiple commits into a single commit in Git?
+34. Which Git command maintains history—merge, rebase, or another?
+35. What is the difference between a queue and a topic?
+36. What are common Kafka interview questions (e.g., producers, consumers, partitions, offsets, delivery guarantees)?
+37. If calling another API over HTTPS throws an SSL error saying the public key cert path is incorrect: What would you do?
+38. Where is the certificate typically stored?

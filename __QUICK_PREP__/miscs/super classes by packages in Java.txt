@@ -1,0 +1,339 @@
+Here's the superclass list for all java default packages:
+
+Every class ultimately traces back to **`Object`** as the root superclass
+
+---
+
+**java.lang**
+- `Object` → none (root)
+- `String` → `Object`
+- `StringBuilder` → `Object`
+- `StringBuffer` → `Object`
+- `Math` → `Object`
+- `System` → `Object`
+- `Thread` → `Object`
+- `Throwable` → `Object`
+- `Exception` → `Throwable`
+- `RuntimeException` → `Exception`
+- `Error` → `Throwable`
+- `Number` → `Object`
+- `Integer` → `Number`
+- `Long` → `Number`
+- `Double` → `Number`
+- `Float` → `Number`
+- `Byte` → `Number`
+- `Short` → `Number`
+- `Boolean` → `Object`
+- `Character` → `Object`
+- `Enum` → `Object`
+- `Record` → `Object`
+
+---
+
+**java.util**
+- `ArrayList` → `AbstractList`
+- `LinkedList` → `AbstractSequentialList`
+- `AbstractList` → `AbstractCollection`
+- `AbstractCollection` → `Object`
+- `HashSet` → `AbstractSet`
+- `LinkedHashSet` → `HashSet`
+- `TreeSet` → `AbstractSet`
+- `AbstractSet` → `AbstractCollection`
+- `HashMap` → `AbstractMap`
+- `LinkedHashMap` → `HashMap`
+- `TreeMap` → `AbstractMap`
+- `AbstractMap` → `Object`
+- `Stack` → `Vector`
+- `Vector` → `AbstractList`
+- `Scanner` → `Object`
+- `Random` → `Object`
+- `Date` → `Object`
+- `Calendar` → `Object`
+- `Arrays` → `Object`
+- `Collections` → `Object`
+
+---
+
+**java.io**
+- `InputStream` → `Object`
+- `OutputStream` → `Object`
+- `Reader` → `Object`
+- `Writer` → `Object`
+- `FileInputStream` → `InputStream`
+- `FileOutputStream` → `OutputStream`
+- `BufferedReader` → `Reader`
+- `BufferedWriter` → `Writer`
+- `PrintWriter` → `Writer`
+- `PrintStream` → `FilterOutputStream`
+- `FilterOutputStream` → `OutputStream`
+- `FilterInputStream` → `InputStream`
+- `File` → `Object`
+- `ObjectInputStream` → `InputStream`
+- `ObjectOutputStream` → `OutputStream`
+
+---
+
+**java.nio**
+- `Buffer` → `Object`
+- `ByteBuffer` → `Buffer`
+- `CharBuffer` → `Buffer`
+- `IntBuffer` → `Buffer`
+- `LongBuffer` → `Buffer`
+- `FloatBuffer` → `Buffer`
+- `DoubleBuffer` → `Buffer`
+
+---
+
+**java.nio.file**
+- `Files` → `Object`
+- `Paths` → `Object`
+- `FileStore` → `Object`
+
+---
+
+**java.nio.channels**
+- `SelectableChannel` → `AbstractInterruptibleChannel`
+- `AbstractInterruptibleChannel` → `Object`
+- `FileChannel` → `AbstractInterruptibleChannel`
+
+---
+
+**java.nio.charset**
+- `Charset` → `Object`
+- `CharsetEncoder` → `Object`
+- `CharsetDecoder` → `Object`
+
+---
+
+**java.net**
+- `Socket` → `Object`
+- `ServerSocket` → `Object`
+- `URL` → `Object`
+- `URI` → `Object`
+- `URLConnection` → `Object`
+- `HttpURLConnection` → `URLConnection`
+- `InetAddress` → `Object`
+
+---
+
+**java.net.http** *(Java 11+)*
+- `HttpClient` → `Object`
+- `HttpRequest` → `Object`
+- `HttpResponse` → `Object`
+
+---
+
+**java.math**
+- `BigInteger` → `Number`
+- `BigDecimal` → `Number`
+- `MathContext` → `Object`
+
+---
+
+**java.text**
+- `Format` → `Object`
+- `DateFormat` → `Format`
+- `SimpleDateFormat` → `DateFormat`
+- `NumberFormat` → `Format`
+- `DecimalFormat` → `NumberFormat`
+- `MessageFormat` → `Format`
+
+---
+
+**java.util.stream**
+- `AbstractPipeline` → `Object`
+- `ReferencePipeline` → `AbstractPipeline`
+
+---
+
+**java.util.function**
+- All interfaces (no superclass — they are functional interfaces)
+
+---
+
+**java.util.concurrent**
+- `ThreadPoolExecutor` → `AbstractExecutorService`
+- `AbstractExecutorService` → `Object`
+- `ForkJoinPool` → `AbstractExecutorService`
+- `CountDownLatch` → `Object`
+- `Semaphore` → `Object`
+- `CyclicBarrier` → `Object`
+
+---
+
+**java.util.concurrent.atomic**
+- `AtomicInteger` → `Number`
+- `AtomicLong` → `Number`
+- `AtomicBoolean` → `Object`
+- `AtomicReference` → `Object`
+
+---
+
+**java.util.concurrent.locks**
+- `ReentrantLock` → `Object`
+- `ReentrantReadWriteLock` → `Object`
+- `LockSupport` → `Object`
+
+---
+
+**java.security**
+- `MessageDigest` → `MessageDigestSpi`
+- `MessageDigestSpi` → `Object`
+- `KeyPair` → `Object`
+- `SecureRandom` → `Random`
+- `Permission` → `Object`
+
+---
+
+**java.security.cert**
+- `Certificate` → `Object`
+- `X509Certificate` → `Certificate`
+- `CertificateFactory` → `Object`
+
+---
+
+**javax.crypto**
+- `Cipher` → `Object`
+- `KeyGenerator` → `Object`
+- `SecretKeyFactory` → `Object`
+- `Mac` → `Object`
+
+---
+
+**java.sql**
+- `DriverManager` → `Object`
+- `SQLException` → `Exception`
+- `Date` → `java.util.Date`
+- `Time` → `java.util.Date`
+- `Timestamp` → `java.util.Date`
+
+---
+
+**javax.sql**
+- `RowSetEvent` → `java.util.EventObject`
+- `ConnectionEvent` → `java.util.EventObject`
+
+---
+
+**java.awt**
+- `Component` → `Object`
+- `Container` → `Component`
+- `Window` → `Container`
+- `Frame` → `Window`
+- `Panel` → `Container`
+- `Graphics` → `Object`
+- `Color` → `Object`
+- `Font` → `Object`
+- `Image` → `Object`
+
+---
+
+**java.awt.event**
+- `AWTEvent` → `java.util.EventObject`
+- `ActionEvent` → `AWTEvent`
+- `MouseEvent` → `InputEvent`
+- `KeyEvent` → `InputEvent`
+- `InputEvent` → `ComponentEvent`
+- `ComponentEvent` → `AWTEvent`
+
+---
+
+**javax.swing**
+- `JComponent` → `Container`
+- `JPanel` → `JComponent`
+- `JFrame` → `Frame`
+- `JButton` → `AbstractButton`
+- `JLabel` → `JComponent`
+- `JTextField` → `JTextComponent`
+- `JTextArea` → `JTextComponent`
+- `JTextComponent` → `JComponent`
+- `AbstractButton` → `JComponent`
+- `JDialog` → `Dialog`
+- `JCheckBox` → `AbstractButton`
+- `JRadioButton` → `AbstractButton`
+
+---
+
+**javax.xml**
+- `XMLConstants` → `Object`
+
+---
+
+**org.xml.sax**
+- `SAXException` → `Exception`
+- `SAXParseException` → `SAXException`
+- `InputSource` → `Object`
+
+---
+
+**org.w3c.dom**
+- All DOM types are interfaces (no superclass)
+
+---
+
+**java.lang.reflect**
+- `Field` → `AccessibleObject`
+- `Method` → `AccessibleObject`
+- `Constructor` → `AccessibleObject`
+- `AccessibleObject` → `Object`
+- `Proxy` → `Object`
+
+---
+
+**java.lang.annotation**
+- All are interfaces (no superclass)
+
+---
+
+**java.time**
+- `LocalDate` → `Object`
+- `LocalTime` → `Object`
+- `LocalDateTime` → `Object`
+- `ZonedDateTime` → `Object`
+- `Instant` → `Object`
+- `Duration` → `Object`
+- `Period` → `Object`
+
+---
+
+**java.time.format**
+- `DateTimeFormatter` → `Object`
+- `DateTimeFormatterBuilder` → `Object`
+
+---
+
+**java.time.zone**
+- `ZoneRules` → `Object`
+- `ZoneOffsetTransition` → `Object`
+
+---
+
+**java.beans**
+- `Introspector` → `Object`
+- `PropertyChangeSupport` → `Object`
+- `PropertyChangeEvent` → `java.util.EventObject`
+
+---
+
+**java.rmi**
+- `RemoteException` → `IOException`
+- `Naming` → `Object`
+
+---
+
+**java.util.logging**
+- `Logger` → `Object`
+- `Handler` → `Object`
+- `FileHandler` → `StreamHandler`
+- `StreamHandler` → `Handler`
+- `LogRecord` → `Object`
+
+---
+
+**javax.naming**
+- `NamingException` → `Exception`
+- `InitialContext` → `Object`
+- `Reference` → `Object`
+
+---
+

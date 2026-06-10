@@ -1,0 +1,54 @@
+What is OOP
+What are the Four Pillars of OOP?
+What is Encapsulation
+how do you achieve Encapsulation? 
+What is Abstraction?
+how do you achieve Abstraction ?
+Can we create an object (instantiate) of an Abstract Class?
+How does encapsulation differ from abstraction?
+Abstract Class vs. Interface
+When should you use an Abstract Class vs. an Interface?
+Can an Abstract Class have a final method?
+Can a method be both abstract and final? 
+What is Inheritance?
+How to implement Inheretance?
+What is the super keyword? 
+What are the different types of inheritance?
+What order constructors called in inheritance?
+Can you inherit a final class or override a final method?
+Are private members inherited?
+What is the Diamond Problem?
+Inheritance vs. Composition: Which is better?
+---
+What are Access Modifiers? ***
+List the four levels of access
+What is the "Default" modifier?
+Can a Top-Level Class be private or protected? 
+How do access modifiers relate to Encapsulation? ***
+Can you change the access level of a method when overriding it?
+Why should instance variables almost always be private? ***
+When would you use a private constructor?
+Is protected access safe?
+What is an Interface and why is it used? *** 
+Can we instantiate an Interface?
+What is the difference between an Interface and an Abstract Class?
+What is a Marker Interface?
+Can an Interface have method implementations? 
+What happens if a class implements two interfaces that have the same default method?
+Are all methods in an interface implicitly public?
+What is a Functional Interface? *** 
+"Design for an Interface, not an Implementation": What does this mean? *** 
+Why does a class "implement" an interface but "extend" a class? *** 
+What is an Abstract Class?
+Can an Abstract Class have a Constructor?
+Why can't we instantiate an Abstract Class? 
+What is the difference between an Abstract Class and an Interface?
+When would you choose an Interface over an Abstract Class? 
+Can an Abstract Class have zero abstract methods?
+Can a method be both abstract and static?
+Can an Abstract Class be final? 
+What happens if a subclass does not implement all abstract methods of its parent? 
+What is a "Partial Implementation"? 
+Can an Abstract Class implement an Interface?
+How would you model a Payment System using Abstract Classes
+---

@@ -1,0 +1,718 @@
+==========================================================
+OOP
+==========================================================
+Characteristics of an OOP
+Abstraction
+Encapsulation
+Inheritance 
+Polymorphism
+Types of Inheritance
+Types of Polymorphism
+Composition 
+Association
+Types of Association
+	Aggregation 
+	Composition 
+Cohesion
+Coupling
+Advantage of OOP over Procedure-Oriented Programming Language
+
+==========================================================
+Design Principles
+==========================================================
+
+DRY
+KISS
+YAGNI
+12 Factor
+SOLID
+
+==========================================================
+Design Pattern
+==========================================================
+
+GOF
+
+==========================================================
+Core Java
+==========================================================
+
+OOP
+----------------------------------------------------------
+Abstract class
+Interface
+Class vs Interface
+Functional Interface
+Nested Interface
+Marker Interface
+Static - Block, Variable, Method, in main()
+Final - Variable, Method, Class
+Static Methods vs Instance Methods
+Access Modifiers
+
+Basics
+----------------------------------------------------------
+JDK vs JRE vs JVM
+Packages
+Wrapper Classes
+
+JVM / Memory Allocation
+----------------------------------------------------------
+Java Memory Management
+How Java Objects Stored in Memory?
+Types of Memory Areas Allocated by JVM
+Stack vs Heap Memory Allocation
+Garbage Collection
+Java Garbage Collection Improvements 
+Types of JVM Garbage Collectors
+Memory Leaks
+Java Heap Dump Analysis using VisualVM 
+
+String
+----------------------------------------------------------
+Why Strings are Immutable
+String Pool
+String Concatenation
+String Methods
+String Class
+StringBuffer Class
+StringBuilder Class
+Strings vs StringBuffer vs StringBuilder
+
+Exception Handling
+----------------------------------------------------------
+Exceptions Diagram
+Types of Java Exceptions
+Try-Catch Block
+Final, Finally and Finalize
+Throw and Throws
+Customized Exception Handling
+Chained Exceptions
+Null Pointer Exceptions
+Exception Handling with Method Overriding
+
+Java 8 Features
+----------------------------------------------------------
+Lambda Expressions
+Method References
+Java Streams
+Functional Interface
+
+Java 25 Features
+----------------------------------------------------------
+Virtual Threads
+
+Multithreading, Concurrency & Synchronization
+----------------------------------------------------------
+Different Ways to Create Threads
+Advantages of Multithreading in Java
+Threads
+Thread.start() vs Thread.run() Method
+Thread.sleep() Method
+Runnable Interface
+Main Thread
+Thread Priority in Multithreading
+Daemon Thread
+Java Synchronization
+Thread Safety
+Locks in Java
+Lock vs Monitor in Concurrency
+Lock Framework vs Thread Synchronization
+Reentrant Lock
+Deadlock in Multithreading
+Thread Pools
+Executor Framework
+CompletableFuture
+
+==========================================================
+Collections
+==========================================================
+
+Collections Diagram
+Collections Class
+
+Core Interfaces
+----------------------------------------------------------
+Collection Interface
+List Interface
+Set Interface
+Queue Interface
+Deque Interface
+Map Interface
+
+List Implementations
+----------------------------------------------------------
+ArrayList
+LinkedList
+Vector
+Stack
+AbstractList
+AbstractSequentialList
+
+Set Implementations
+----------------------------------------------------------
+HashSet
+Linked HashSet
+TreeSet
+EnumSet
+SortedSet Interface
+NavigableSet
+ConcurrentSkipListSet
+
+Queue / Deque Implementations
+----------------------------------------------------------
+Priority Queue
+Array Deque
+BlockingQueue
+ConcurrentLinked Queue
+Abstract Queue
+
+Map Implementations
+----------------------------------------------------------
+HashMap
+LinkedHashMap
+TreeMap
+WeakHashMap
+IdentityHashMap
+HashTable
+
+Utility and Supporting Classes
+----------------------------------------------------------
+Collections Class
+Iterable interface
+ListIterator
+Enumeration
+Comparator
+Comparable
+
+Concurrency Collections
+----------------------------------------------------------
+ConcurrentHashMap
+CopyOnWriteArrayList
+ConcurrentLinkedQueue
+BlockingQueue (ArrayBlockingQueue, LinkedBlockingQueue )
+
+File Handling
+----------------------------------------------------------
+
+I/O Streams - Diagram
+Byte Streams
+Character Streams
+Create a File
+Read from a File
+Write to a File
+canRead a File
+canWrite a File
+Existance of a File
+Getting a path
+Delete a File
+
+==========================================================
+Java Database Connectivity(JDBC)
+==========================================================
+
+JDBC Architecture Diagram
+JDBC API (Application Layer)
+JDBC Driver API (Driver Layer)
+Types of JDBC Drivers
+JDBC Classes and Interfaces
+Establishing JDBC Connection
+Java Database Connectivity Diagram
+Types of Statements in JDBC
+CRUD Operations using JDBC
+JDBC Exception Handling
+Transactions in JDBC
+
+==========================================================
+Spring
+==========================================================
+
+Spring Architecture Diagram
+Spring Initializr and other ways to create spring app
+Spring vs Struts in Java
+
+==========================================================
+Spring Core
+==========================================================
+Create a Simple Spring Application
+Inversion of Control
+IoC Container
+BeanFactory
+ApplicationContext
+BeanFactory vs. ApplicationContext
+Dependency Injection
+Bean life cycle
+Bean Scope - Singleton, Prototype Scope
+Custom Scope
+Create a Spring Bean
+Spring Autowiring
+DispatcherServlet
+Expression Language(SpEL)
+RowMapper vs ResultSetExtractor
+
+Spring Core Annotations: Dependency injection, bean lifecycle, and context configuration.
+Spring Web Annotations: Used for building web and RESTful services.
+Spring Boot Annotations: Simplify auto-configuration and bootstrapping.
+Spring Scheduling Annotations: For task scheduling and asynchronous execution.
+Spring Data Annotations: For JPA, repositories, and data persistence.
+Spring Bean Annotations: For defining and managing beans.
+
+==========================================================
+Spring Boot
+==========================================================
+
+Spring Boot Architecture
+Spring Boot - Auto-configuration
+Spring Boot - Dependency Management
+Spring vs Spring Boot
+Create Project
+Run First Spring Boot Application
+Application Properties
+Dependency Management
+Starters
+Hello World Example
+REST Example
+Exception Handling
+Actuator
+Spring JDBC vs Spring Data JDBC
+Application Properties vs YAML Configuration
+DevTools
+
+==========================================================
+Spring MVC
+==========================================================
+
+Introduction to Spring MVC
+----------------------------------------------------------
+Introduction
+Dispatcher Servlet in Spring
+Spring MVC vs. Spring Boot
+Create and RunFirst MVC Controller
+@Controller vs @RestController
+
+Creating a Spring MVC Project
+----------------------------------------------------------
+Download and Install Spring Tool Suite IDE
+Download and Install Eclipse on Windows
+Create a Dynamic Web Project in Eclipse/Spring Tool Suite
+
+Core Spring MVC
+----------------------------------------------------------
+Create Your First Model
+Create Your First View
+Create and Run Your First Spring MVC Controller
+Multi-Action Controller with Example
+Spring MVC using Java-based configuration
+ViewResolver
+WebApplicationContext
+ApplicationContext vs. WebApplicationContext
+
+Data Handling
+----------------------------------------------------------
+Data Transfer Object (DTO) with Example
+Data Binding with Example
+Query String and Query Parameter
+Two-Way Data Binding with Example
+
+Validation & Exception Handling
+----------------------------------------------------------
+Exception Handling
+Validation
+Custom Validation
+Regular Expression Validation
+Number Validation
+
+Spring MVC Form Handling
+----------------------------------------------------------
+Form Handling
+Form Checkbox
+Form Radio Button
+Form Drop-Down List
+Form Tag Library
+Form Text Field
+Capture and Display Data from the Registration Form
+
+Views & UI Components
+----------------------------------------------------------
+Listbox
+Spring MTextArea
+Hidden Field
+Password
+Text Box
+Multiple View Page
+
+Spring MVC Annotation
+----------------------------------------------------------
+@RequestParam
+@RequestMapping
+@ResponseBody
+@ModelAttribute
+@Component, @Repository, @Service and @Controller
+
+Spring MVC with JSTL
+----------------------------------------------------------
+Basic Example using JSTL
+JSTL Configuration
+JSTL forEach Tag with Example
+Iterating List on JSP using JSTL
+
+Spring MVC with REST API
+----------------------------------------------------------
+Post Request
+get() Method Request
+Delete Request
+OpenSource REST API URL and Retrieving Data From
+Get University/College Details via REST API
+
+Spring MVC with Database
+----------------------------------------------------------
+CRUD Operation
+Project Using Spring MVC and Hibernate 5
+Integration with MySQL
+Sample Project For Finding Doctors Online with MySQL
+Sample Project For Calculating Electricity Bill
+MySQL and Junit Finding Employees Based on Location
+
+Advanced & Useful Features
+----------------------------------------------------------
+File Upload
+Pagination with Example
+Multiple Controller
+Multiple Resolver Mapping
+Tiles
+Load Literal Values From Properties File
+Application Without web.xml File
+Resolve WEB xml is missing and failOnMissingWebXml
+
+==========================================================
+Spring Boot with REST API
+==========================================================
+
+RESTful Web Services
+@RestController
+Simple RestController
+@RequestMapping
+@GetMapping and @PostMapping
+@PutMapping and @DeleteMapping
+@PathVariable and @RequestParam
+@RequestBody
+JSON Serialization/Deserialization
+REST JSON Response
+REST XML Response
+REST API using Spring Boot
+Jackson Integration
+RestTemplate
+Exception Handling
+Validation
+
+==========================================================
+Hibernate 
+==========================================================
+
+Basics
+----------------------------------------------------------
+Key features of Hibernate
+Hibernate Architecture
+Hibernate Workflow
+Lifecycle
+JDBC vs. Hibernate
+JPA vs. Hibernate
+ORM vs. JDBC
+
+Core Hibernate Concepts
+----------------------------------------------------------
+Example using XML in Eclipse
+Create a Hibernate Configuration File
+get() and load() Method
+Eager/Lazy Loading
+Pagination
+Cascade Types
+
+Hibernate Caching
+----------------------------------------------------------
+Hibernate Caching
+Enable and Implement First and Second Level Cache
+Cache Eviction
+Cache Expiration
+
+Hibernate Annotations
+----------------------------------------------------------
+@Embeddable vs @Embedded
+@Entity
+@Table
+@Column
+@Id
+@GeneratedValue
+@Version
+@OrderBy
+@Transient
+
+Hibernate Mapping
+----------------------------------------------------------
+One-to-One Mapping
+One-to-Many Mapping
+Many-to-One Mapping
+Many-to-Many Mapping
+Component Mapping
+
+Hibernate with Spring Framework
+----------------------------------------------------------
+Configuration and Create a Table in Database
+Spring ORM Example
+Integrating Hibernate and JPA
+Validation using Hibernate Validator
+
+Hibernate with Database
+----------------------------------------------------------
+CRUD Operations
+Automatic Table Creation
+Hibernate Query Language
+Native SQL
+SQL Dialects
+Example using JPA and MySQL
+
+Advanced Hibernate
+----------------------------------------------------------
+Validator with Example
+Batch Processing
+Interceptors
+Criteria Queries
+
+Inheritance Mapping
+----------------------------------------------------------
+Inheritance Mapping
+Table Per Hierarchy using XML File
+Table Per Concrete Class using XML File
+Table Per Subclass Example using XML File
+
+==========================================================
+Spring Boot with Database and Data JPA
+==========================================================
+
+Integrating Spring Boot with MySQL
+PostgreSQL
+MongoDB
+Spring Data JPA
+JDBC
+CrudRepository vs. JpaRepository
+H2 Database for Testing
+Project - CRUD Operations with JPA Repositories
+Find Records From MySQL
+Delete Records From MySQL
+Insert Data in MySQL Table
+@Table Annotation
+@Column Annotation
+@Id Annotation
+
+
+==========================================================
+Advanced Spring Boot Features
+==========================================================
+
+Scheduling Tasks
+Sending Emails
+File Handling & Uploading Files
+Caching
+Caching with other Providers
+Transaction Management
+DTO Mapping
+
+==========================================================
+Spring Boot Cloud / Microservices  
+==========================================================
+
+Communication Between Spring Microservices
+Deploy Java Microservices on AWS Elastic Beanstalk
+
+==========================================================
+Spring Security
+==========================================================
+
+Basics
+----------------------------------------------------------
+Introduction
+Spring Security Architecture
+Annotations
+Spring Boot Security Auto-Configuration
+UserDetailsService and UserDetails
+Method Level
+Important Terms
+OAuth2 Authentication
+Method Level
+JSP Tag Library
+Form-Based Authentication
+Remember Me
+Authentication and Authorization in Spring Boot 3.0
+
+Securing Web Applications
+----------------------------------------------------------
+Securing Endpoints Using antMatchers()
+Filter Chain with Example
+Password Storage
+Password Encoder
+Role-Based Authentication
+Secure Your Web Application
+
+Authentication with Spring Security
+----------------------------------------------------------
+Basic Authentication
+Authentication and Authorization in Spring Boot
+Registration and Login Process
+Logout Process
+Custom Login
+Custom Form Login with Database Authentication
+Activate a New Account by Email
+Updating Your Password
+Redirect to Different Pages After Login
+Making Registration API RESTful
+Authentication Failure Handler
+
+Authorization and Access Control
+----------------------------------------------------------
+Role Based Authentication
+Role Based and Permission Based Access Control
+In-Memory Authentication
+JDBC Authentication
+Form Based Authentication
+Remember Me Functionality
+
+JWT and API Security
+----------------------------------------------------------
+JWT Authentication with Spring Boot
+Spring Security OAuth2 VS JWT(JSON Web Tokens)
+Securing Spring Boot API With API Key
+
+CSRF and CORS In Spring Security
+----------------------------------------------------------
+CSRF Protection
+How to Enable and Disable CSRF
+CORS
+CORS Configuration
+
+Advanced Topics of Spring Security
+----------------------------------------------------------
+Two Factor Authentication
+Prevent Brute Force Authentication Attempts
+Testing Spring Security Auth with JUnit
+Extra Login Fields with Spring Security
+Resend Verification Email
+Disable Security for a Profile in Spring Boot
+
+==========================================================
+Spring Boot with Kafka
+==========================================================
+
+Kafka Producer and Consumer in Spring Boot
+Publishing and Consuming JSON Messages
+Publishing and Consuming String Messages
+Create and Configure Topics in Apache Kafka
+Consume Message Through Kafka, Save into ElasticSearch and Plot into Grafana
+Start/Stop a Kafka Listener Dynamically
+
+==========================================================
+Spring Boot with AOP
+==========================================================
+
+Introduction
+Implement AOP
+Cache Provider
+Around Advice
+After Advice
+After Throwing
+After Returning
+Before Advice
+Spring Boot Advices
+AOP vs OOP
+AOP vs AspectJ
+AspectJ Xml Configuration
+AspectJ Annotation
+Example (Spring1.2 Old Style AOP)
+
+==========================================================
+Spring Boot Testing
+==========================================================
+
+Unit Testing with JUnit
+Testing with Mockito
+Integration Testing with MockMVC
+Using ZeroCode for Testing
+
+==========================================================
+Spring Core Annotations
+==========================================================
+
+DI-Related Annotations
+----------------------------------------------------------
+@Autowired
+@Qualifier
+@Primary
+@Bean
+@Lazy
+@Value
+@Scope
+@Lookup
+@Required(Deprecated)
+
+Context Configuration Annotations
+----------------------------------------------------------
+@Configuration
+@ConfigurationProperties
+@ComponentScan
+@Import
+@ImportResource
+@PropertySource
+@Profile
+@PropertySource
+@Conditional
+
+Spring Bean Annotations
+----------------------------------------------------------
+@Bean
+@Component
+@Controller
+@Service
+@Repository
+@Required
+
+Spring Boot App Annotations
+----------------------------------------------------------
+@SpringBootApplication
+@SpringBootConfiguration
+@EnableAutoConfiguration
+
+Web and REST API Annotations
+----------------------------------------------------------
+@RestController
+@RequestMapping
+
+HTTP Method Annotations
+----------------------------------------------------------
+@PathVariable
+@RequestParam
+@RequestBody
+
+Validation Annotations
+----------------------------------------------------------
+@NotNull 
+@NotBlank
+@Email
+@Size 
+
+Exception Handling Annotations
+----------------------------------------------------------
+@ExceptionHandler
+@ControllerAdvice
+
+JPA and Database Annotations
+----------------------------------------------------------
+
+@Entity
+@Table
+@Id
+@GeneratedValue
+@Column
+
+---
+HackerRank
+socor31134@pertok.com
+Easytype@123

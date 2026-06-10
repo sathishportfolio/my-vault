@@ -1,0 +1,178 @@
+What is an Inner Class and why would you use it?
+What are the different types of Nested Classes?
+Can an Inner Class access private members of the Outer Class?
+What is the difference between a Static Nested Class and a Non-Static Inner Class?
+What is the "Memory Leak" risk with Inner Classes?
+What is an Anonymous Inner Class?
+How do Inner Classes improve Encapsulation?
+Why can't a Static Nested Class access non-static members of the Outer Class?
+What is the impact of Inner Classes on the filesystem after compilation?
+---
+Struck during Revision 
+---
+How do you prevent an attribute from being modified after the object is created? ??? 
+Where are Classes and Objects stored in memory? - - 
+What happens to an object when it is no longer used? - - 
+What is code smell? *** - - 
+What is a Constructor and why is it used? - - 
+How does a Constructor differ from a Method? - -
+What is an Inner Class and why would you use it? - - 
+how do you achieve Abstraction ? *** 
+What are Access Modifiers? ***
+How do access modifiers relate to Encapsulation? ***
+Why should instance variables almost always be private? ***
+What is an Interface and why is it used? *** 
+What is a Functional Interface? *** 
+"Design for an Interface, not an Implementation": What does this mean? *** 
+Why does a class "implement" an interface but "extend" a class? *** 
+What is an Abstract Class? *** 
+Can a method be both abstract and static? *** 
+What is the difference between Static and Dynamic Binding? *** 
+Why are static and final methods always Statically Bound? *** 
+How does method hiding differ from method overriding in Java *** 
+Can a single relationship be both Aggregation and Composition? *** 
+What is Cohesion? ***
+What is Coupling? *** 
+What is Method Hiding? *** 
+Why should you avoid making all attributes public? ***
+What is code smell? *** - - 
+What is a Copy Constructor? *** 
+What is Constructor Chaining? *** 
+Can a Constructor be final, static, or abstract? ***
+---
+FULL OOPS LIST
+---
+What is OOP
+What are the Four Pillars of OOP?
+What is Encapsulation
+how do you achieve Encapsulation? 
+What is Abstraction?
+how do you achieve Abstraction ? *** 
+Can we create an object (instantiate) of an Abstract Class?
+How does encapsulation differ from abstraction?
+Abstract Class vs. Interface
+When should you use an Abstract Class vs. an Interface?
+Can an Abstract Class have a final method?
+Can a method be both abstract and final? 
+What is Inheritance?
+How to implement Inheretance?
+What is the super keyword? 
+What are the different types of inheritance?
+What order constructors called in inheritance?
+Can you inherit a final class or override a final method?
+Are private members inherited?
+What is the Diamond Problem?
+Inheritance vs Composition: Which is better?
+What are Access Modifiers? ***
+List the four levels of access
+What is the "Default" modifier?
+Can a Top-Level Class be private or protected? 
+How do access modifiers relate to Encapsulation? ***
+Can you change the access level of a method when overriding it?
+Why should instance variables almost always be private? ***
+When would you use a private constructor?
+Is protected access safe?
+What is an Interface and why is it used? *** 
+Can we instantiate an Interface?
+What is the difference between an Interface and an Abstract Class?
+What is a Marker Interface?
+Can an Interface have method implementations? 
+What happens if a class implements two interfaces that have the same default method?
+Are all methods in an interface implicitly public?
+What is a Functional Interface? *** 
+"Design for an Interface, not an Implementation": What does this mean? *** 
+Why does a class "implement" an interface but "extend" a class? *** 
+What is an Abstract Class? *** 
+Can an Abstract Class have a Constructor?
+Why can't we instantiate an Abstract Class? 
+What is the difference between an Abstract Class and an Interface?
+When would you choose an Interface over an Abstract Class? 
+Can an Abstract Class have zero abstract methods?
+Can a method be both abstract and static? *** 
+Can an Abstract Class be final? 
+What happens if a subclass does not implement all abstract methods of its parent? 
+What is a "Partial Implementation"? 
+Can an Abstract Class implement an Interface?
+How would you model a Payment System using Abstract Classes
+What is Polymorphism?
+How does Polymorphism promote extensibility?
+Types of Polymorphism
+What is method overloading?
+What is Method Overriding?
+Overloading (Static) Vs Overriding (Dynamic) 
+Can we override a static method?
+Can we overload a method by changing only the return type? 
+What is the "Upcasting" and "Downcasting"?
+What is the difference between Static and Dynamic Binding? *** 
+Which OOP principle is associated with Dynamic Binding?
+Why is Static Binding faster?
+How does the system handle Dynamic Binding internally? 
+Why are static and final methods always Statically Bound? *** 
+What is "Method Hiding" in the context of Static Binding? 
+"Parent obj = new Child();obj.someMethod();If someMethod is overridden in Child, which binding is used?"
+"Parent obj = new Child();obj.staticMethod();If staticMethod is a static method in both classes, which version runs?"
+How does method hiding differ from method overriding in Java *** 
+What is Association in OOP? 
+What are the two specialized forms of Association?
+What is Aggregation?
+What is Composition?
+Inheritance vs. Composition: Which is better? 
+How do you identify Composition in code? 
+How do you identify Aggregation in code? 
+When should you use Aggregation over Composition? 
+Give one example to understand Aggregation vs Composition
+Why is the direction of association important?
+Why is the "Death Relationship" important?
+What is Multiplicity in Association?
+How do you implement a Many-to-Many relationship?
+If I delete a Car object, what happens to the Engine and the Driver?
+Can a single relationship be both Aggregation and Composition? *** 
+How are these relationships drawn in UML diagrams?
+What is Cohesion? ***
+What is Coupling? *** 
+What is Class & Object?
+Where are Classes and Objects stored in memory? - - 
+What is an Anonymous Object? 
+What is the "this" keyword? 
+How does a "Static" member differ from an "Instance" member?
+why If your application uses multiple threads, declare the static variable as volatile? 
+What happens to an object when it is no longer used? - - 
+If you change a static variable in one object, does it change for all other objects of that class? ??
+How many objects can you create from a single class? 
+What is a Singleton Class?
+What is the difference between an Attribute and a Method? 
+What are "Getter" and "Setter" methods?
+What is the difference between a Parameter and an Argument?
+What is a "Static Method" and when should you use it?
+Can a Static Method access Instance Attributes?
+What are "Access Modifiers" for methods and attributes?
+What is Method Hiding? *** 
+What is "Pass-by-Value" vs. "Pass-by-Reference"?
+What is a Recursive Method?
+What are "Final" attributes and methods?
+How do you prevent an attribute from being modified after the object is created?
+Why should you avoid making all attributes public? ***
+If a method has a high number of parameters (e.g., 10+), how would you refactor
+What is code smell? *** - - 
+What is a Constructor and why is it used? - - 
+How does a Constructor differ from a Method? - -
+What is a Default Constructor? 
+Can a Constructor be private? 
+Can you overload a Constructor?
+What is Constructor Overloading? 
+What is a Copy Constructor? *** 
+Does a Constructor get inherited? 
+What is Constructor Chaining? *** 
+Can a Constructor be final, static, or abstract? ***
+What happens if you define a parameterized constructor but no default constructor? 
+Why is it a best practice to call super() as the first line in a constructor? 
+What is the difference between this() and super() in a constructor?
+What is an Inner Class and why would you use it? - - 
+What are the different types of Nested Classes?
+Can an Inner Class access private members of the Outer Class?
+What is the difference between a Static Nested Class and a Non-Static Inner Class?
+What is the "Memory Leak" risk with Inner Classes?
+What is an Anonymous Inner Class?
+How do Inner Classes improve Encapsulation?
+Why can't a Static Nested Class access non-static members of the Outer Class?
+What is the impact of Inner Classes on the filesystem after compilation?
